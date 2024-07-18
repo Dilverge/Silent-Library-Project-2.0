@@ -1,0 +1,104 @@
+body{
+  color: white;
+  font-family: Montserrat;
+}
+.header{
+    background-color:#313B96;
+    color:white;
+  }
+
+ .alert {
+    text-align:center;
+    background-color: #eec933;
+    color:black;
+    font-family: Montserrat;
+}
+
+.overlay-container{
+  position:relative;
+  width: 100%;
+}
+
+.overlay-image{
+display: block;
+width: 100%;
+height: auto;
+}
+
+.horizontal-divider {
+  width: 100%;
+  height: 3rem;
+  /* background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15); */
+  /* border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15); */
+}
+
+.overlay-screen{
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+background-color: rgb(37, 37, 37);
+overflow:hidden;
+width: 100%;
+height: 0;
+transition: .7s ease;
+}
+
+.overlay-container:hover .overlay-screen{
+height: 100%;
+}
+
+.overlay-text{
+color: white;
+position: absolute;
+margin-left:10%;
+top: 50%;
+left: 5%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-10%, -50%);
+/* text-align: center; */
+
+}
+
+.navbar-toggler{
+  color:white;
+}
+
+.hidden{
+  display: none;
+}
+
+.nav-bar-element{
+  color:white;
+  margin-left:25px;
+}
+
+h2{
+  padding-top: 5px;
+  /* font-size: 2vw; */
+}
+
+h3{
+  /* font-size: 1.9vw; */
+}
+
+/* .card{
+  background-color: #473a91;
+} */
+
+.card-title{
+  /* font-size: 1vw; */
+}
+
+.card-text{
+  /* font-size: 0.6vw; */
+  color:grey;
+}
+
+.footer{
+  height: 200px;
+  background-color: #313B96;
+}

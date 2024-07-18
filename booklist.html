@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booklist</title>
+    <link rel="icon" type="image/x-icon" href="images/Silent Library Logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+    </style>
+
+</head>
+  <body>
+    <!-- header start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-0" >
+        <div class="container-fluid header navbar-dark">
+          <a class="navbar-brand" href="index.html"> 
+            <img src="images/Silent Library Logo.jpg" class="img-fluid"  alt="Silent Library Logo"> 
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link nav-bar-element" aria-current="page"  href="index.html">
+                  Home
+                </a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-bar-element" href="booklist.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Booklist
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="booklist.html#row-1">New Arrivals</a></li>
+                  <li><a class="dropdown-item" href="booklist.html#row-1">Top Rated</a></li>
+                  <li><a class="dropdown-item" href="booklist.html#row-2">Staff Picks</a></li>
+                  <li><a class="dropdown-item" href="booklist.html#row-2">Themed Lists</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-bar-element" href="events.html">Events</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success text-white" style="border-color:white" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!-- header end -->
+
+    <!-- breadcrumb start -->  
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb p-2">
+         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+         <li class="breadcrumb-item text-black" aria-current="page">Booklist</li>
+        </ol>
+    </nav>
+    <!-- breadcrumb end -->
+
+    <!-- Catalogue Search start -->
+    <input class="form-control me-2" id="searchInput" type="text" placeholder="Type to filter..." aria-label="Search">
+    <!-- <button class="btn btn-outline-success text-black" style="border-color:black" type="submit">Search</button> -->
+    <!-- Catalogue Search end -->
+
+    <!-- Booklist start -->
+    <table class="table table-bordered table-striped table-responsive" style="background-color:#fff;color:#333;">
+        <thead>
+          <tr>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody id="searchOutput">
+            <tr>
+                <td><a href="book-days-at-the-morisaki-bookshop.html">Days at the Morisaki Bookshop: The perfect book to curl up with</a></td>
+                <td>Satoshi Yagisawa</td>
+                <td>Fiction</td>
+            </tr>
+
+            <tr>
+             <td><a href="book-dog-man-12.html">Dog Man 12: The Scarlet Shredder</a></td>
+             <td>Dav Pilkey</td>
+             <td>Teen & Young Adult</td>
+            </tr>
+
+            <tr>
+             <td><a href="book-game-theory.html">Game Theory: Understanding the Mathematics of Life</a></td>
+             <td>Brian Clegg</td>
+             <td>Educational</td>
+            </tr>
+
+            <tr>
+             <td><a href="book-ikigai.html">Ikigai: The Japanese secret to a long and happy life</a></td>
+             <td>Hector Garcia, Francesc Miralles</td>
+             <td>Self-Help</td>
+            </tr>
+
+            <tr>
+             <td><a href="book-the-courage-to-be-disliked.html">The Courage to be Disliked</a></td>
+             <td>Fumitake Koga, Ichiro Kishimi</td>
+             <td>Self-Help</td>
+            </tr>
+
+            <tr>
+             <td><a href="book-the-culture-map.html">The Culture Map</a></td>
+             <td>Erin Meyer</td>
+             <td>Educational</td>
+            </tr>
+
+            <tr>
+             <td><a href="book-the-girl-who-survived.html">The Girl Who Survived</a></td>
+             <td>Ellie Midwood</td>
+             <td>Teen & Young Adult</td>
+            </tr>
+
+            <tr>
+             <td><a href="book-the-mountain-is-you.html">The Mountain is You</a></td>
+             <td>Brianna Wiest</td>
+             <td>Self-Help</td>
+            </tr>
+
+            <tr>
+             <td><a href="book-when-breath-becomes-air.html">When Breath Becomes Air</a></td>
+             <td>Paul Kalanithi</td>
+             <td>Non-Fiction</td>
+            </tr>
+
+        </tbody>
+      </table>
+    <!-- Booklist end -->
+
+    <!-- Book Lists Row 1 start -->     
+    <div class="d-lg-flex flex-row py-2" id="row-1" style="background-color:#e3f5f1; color:black;">
+        <!-- New Arrivals start -->
+        <ul class="p-2">
+            <h2 style="text-align:center;"> New Arrivals </h2>
+            <div class="row">
+
+                <div class="col-4 p-2 col-lg-4">
+                    <a href="book-the-girl-who-survived.html">
+                    <div class="overlay-container">
+                    <img src="images/New Book 4.jpg" alt="The Girl Who Survived" class="overlay-image">
+                        <div class="overlay-screen">
+                            <div class="overlay-text">
+                                <h3>The Girl Who Survived</h3>
+                                <p class="d-none d-xxl-block">The Girl Who Survived tells the inspiring true story of Ilse Stein, who fell in love with the man she was supposed to loathe.</p>
+                            </div>
+                        </div>
+                
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-4 p-2 col-lg-4">
+                    <a href="book-when-breath-becomes-air.html">
+                        <div class="overlay-container">
+                        <img src="images/New Book 5.jpg" alt="When Breath Becomes Air" class="overlay-image">
+                        <div class="overlay-screen">
+                            <div class="overlay-text">
+                                <h3>When Breath Becomes Air</h3>
+                                <p class="d-none d-xxl-block"> THE NEW YORK TIMES NUMBER ONE BESTSELLER THE SUNDAY TIMES NUMBER ONE BESTSELLER.</p>
+                            </div>
+                        </div>
+                
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-4 p-2 col-lg-4">
+                    <a href="book-dog-man-12.html">
+                        <div class="overlay-container">
+                        <img src="images/New Book 3.jpg" alt="Dog Man 12: The Scarlet Shredder" class="overlay-image">
+                        <div class="overlay-screen">
+                            <div class="overlay-text">
+                                <h3>Dog Man 12: The Scarlet Shredder</h3>
+                                <p class="d-none d-xxl-block">The suspenseful and hilarious twelfth graphic novel in the #1 worldwide bestselling series by award-winning author and illustrator Dav Pilkey!</p>
+                            </div>
+                        </div>
+                
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        
+        </ul>
+        <!-- New Arrivals end -->
+
+        <!-- Top Rated Books start -->
+        <ul class="p-2">
+            <h2 style="text-align:center;"> Top Rated Books </h2>
+            <div class="row">
+
+                <div class="col-4 p-2 col-lg-4">
+                    <a href="book-the-mountain-is-you.html">
+                    <div class="overlay-container">
+                    <img src="images/New Book 1.jpg" alt="The Mountain is You" class="overlay-image">
+                        <div class="overlay-screen">
+                            <div class="overlay-text">
+                                <h3>The Mountain is You</h3>
+                                <p class="d-none d-xxl-block">This is a book about self-sabotage. Why we do it, when we do it, and how to stop doing it—for good.</p>
+                            </div>
+                        </div>
+                
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-4 p-2 col-lg-4">
+                    <a href="book-the-culture-map.html">
+                        <div class="overlay-container">
+                        <img src="images/New Book 2.jpg" alt="The Culture Map" class="overlay-image">
+                        <div class="overlay-screen">
+                            <div class="overlay-text">
+                                <h3>The Culture Map</h3>
+                                <p class="d-none d-xxl-block">Success in business requires navigating through cultural differences, and a knowledge of how to decode cultures foreign to our own.</p>
+                            </div>
+                        </div>
+                
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-4 p-2 col-lg-4">
+                    <a href="book-game-theory.html">
+                        <div class="overlay-container">
+                        <img src="images/New Book 6.jpg" alt="Game Theory: Understanding the Mathematics of Life" class="overlay-image">
+                        <div class="overlay-screen">
+                            <div class="overlay-text">
+                                <h3>Game Theory</h3>
+                                <p class="d-none d-xxl-block">Clegg delves into game theory’s colourful history and significant findings, and shows what we can all learn from this oft-misunderstood field of study.</p>
+                            </div>
+                        </div>
+                
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </ul>
+        <!-- Top Rated Books end -->
+
+    </div>           
+    <!-- Book Lists Row 1 end -->
+    
+    <!-- Book Lists Row 2 start -->
+    <div class="d-lg-flex flex-row py-2" id="row-2" style="background-color:#e3f5f1; color:black;">
+        <!-- Staff Picks start -->
+        <ul class="p-2">
+                <h2 style="text-align:center;"> Staff Picks </h2>
+
+                <div class="row">
+
+                    <div class="col-4 p-2 col-lg-4">
+                        <a href="book-days-at-the-morisaki-bookshop.html">
+                         <div class="overlay-container">
+                          <img src="images/New Book 8.jpg" alt="Days at the Morisaki Bookshop" class="overlay-image">
+                            <div class="overlay-screen">
+                                <div class="overlay-text">
+                                    <h3>Days at the Morisaki Bookshop</h3>
+                                    <p class="d-none d-xxl-block">The beloved Japanese bestseller: a tale of love, family, new beginnings, and the comfort that can be found between the pages of a good book.</p>
+                                </div>
+                            </div>
+                    
+                         </div>
+                        </a>
+                    </div>
+    
+                    <div class="col-4 p-2 col-lg-4">
+                        <a href="book-the-culture-map.html">
+                            <div class="overlay-container">
+                             <img src="images/New Book 2.jpg" alt="The Culture Map" class="overlay-image">
+                               <div class="overlay-screen">
+                                   <div class="overlay-text">
+                                       <h3>The Culture Map</h3>
+                                       <p class="d-none d-xxl-block">Success in business requires navigating through cultural differences, and a knowledge of how to decode cultures foreign to our own.</p>
+                                   </div>
+                               </div>
+                       
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="col-4 p-2 col-lg-4">
+                        <a href="book-the-girl-who-survived.html">
+                            <div class="overlay-container">
+                             <img src="images/New Book 4.jpg" alt="The Girl Who Survived" class="overlay-image">
+                               <div class="overlay-screen">
+                                   <div class="overlay-text">
+                                       <h3>The Girl Who Survived</h3>
+                                       <p class="d-none d-xxl-block">The Girl Who Survived tells the inspiring true story of Ilse Stein, who fell in love with the man she was supposed to loathe.</p>
+                                   </div>
+                               </div>
+                       
+                            </div>
+                        </a>
+                    </div>
+    
+                </div>
+            </ul>
+            <!-- Staff Picks end -->
+
+            <!-- Themed Book Lists start -->
+            <ul class="p-2">
+                    <h2 style="text-align:center;"> This Month's Theme: Self-Help </h2>
+
+                    <div class="row">
+    
+                        <div class="col-4 p-2 col-lg-4">
+                            <a href="book-the-mountain-is-you.html">
+                             <div class="overlay-container">
+                              <img src="images/New Book 1.jpg" alt="The Mountain is You" class="overlay-image">
+                                <div class="overlay-screen">
+                                    <div class="overlay-text">
+                                        <h3>The Mountain is You</h3>
+                                        <p class="d-none d-xxl-block">This is a book about self-sabotage. Why we do it, when we do it, and how to stop doing it—for good.</p>
+                                    </div>
+                                </div>
+                        
+                             </div>
+                            </a>
+                        </div>
+        
+                        <div class="col-4 p-2 col-lg-4">
+                            <a href="book-the-courage-to-be-disliked.html">
+                                <div class="overlay-container">
+                                 <img src="images/New Book 7.jpg" alt="The Courage to be Disliked" class="overlay-image">
+                                   <div class="overlay-screen">
+                                       <div class="overlay-text">
+                                           <h3>The Courage to be Disliked</h3>
+                                           <p class="d-none d-xxl-block">The Courage to be Disliked demonstrates how to unlock the power within yourself to be the person you truly want to be.</p>
+                                       </div>
+                                   </div>
+                           
+                                </div>
+                            </a>
+                        </div>
+        
+                        <div class="col-4 p-2 col-lg-4">
+                            <a href="book-ikigai.html">
+                                <div class="overlay-container">
+                                 <img src="images/New Book 9.jpg" alt="Ikigai" class="overlay-image">
+                                   <div class="overlay-screen">
+                                       <div class="overlay-text">
+                                           <h3>Ikigai</h3>
+                                           <p class="d-none d-xxl-block">We all have an ikigai. It's the Japanese word for 'a reason to live' or 'a reason to jump out of bed in the morning'.</p>
+                                       </div>
+                                   </div>
+                           
+                                </div>
+                            </a>
+                        </div>
+        
+                    </div>
+                    
+            </ul>
+            <!-- Themed Book Lists end -->
+    </div>            
+    <!-- Book Lists Row 2 end -->
+    
+    
+    
+
+    <!-- Footer start -->
+    <div class="footer row">
+      <div class="col-1">
+    
+    
+      
+      </div>
+      <div class="col-2" style="padding-top:30px; padding-bottom:30px;">
+        <a href="index.html"><img src="images/Silent Library Logo.png" style="min-height: 70px; height:8vw;" alt="Silent Library Logo"></a>
+      </div>
+      <div class="col-6">
+        <p style="text-align:center; padding-top:30px;">
+          <a href="contact.html" style="color:white;">
+          Contact Us
+          </a>
+        </p>
+    
+        <p style="text-align:center; padding-top:10px; color:white;">
+          Opening Hours:<br/>
+          Monday - Friday: 10:00AM - 9:00PM<br/>
+          Saturday - Sunday: 10:00AM - 10:00PM
+        </p>
+    
+      </div>
+      <div class="col-2">
+    
+        <p style="text-align:right; padding-top:30px;">
+          <a href="privacypolicy.html" style="color:white;">
+          Privacy Policy
+          </a>
+        </p>
+    
+        <p style="text-align:right;">
+          <a href="sitemap.html" style="color:white;">
+          Sitemap
+          </a>
+        </p>
+    
+      </div>
+      <div clas="col-1">
+    
+      </div>
+    
+    </div>
+    <!-- Footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+  <script>
+    $(document).ready(function(){
+      $("#searchInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#searchOutput tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
+</html>
